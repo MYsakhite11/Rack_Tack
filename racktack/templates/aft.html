@@ -1,0 +1,34 @@
+{% extends 'head1.html' %}
+{% load static %}
+{% block content %}
+<br><br><br>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+			<h1 style="color: white; padding: 10px;" class="bg-danger">Bonjour, enregistrement reussi !!!</h1>
+		</div>
+		<br><br><br>
+		<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
+			<a href="{% url 'racktack_app:list' %}"><button type="button" class="btn btn-primary btn-lg">Voir la liste des taches</button></a>
+		</div>
+		<br><br><br>
+		<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
+			<a href="{% url 'racktack_app:saver_task' %}"><button type="button" class="btn btn-primary btn-lg">Enregistrer une autre tache</button></a>
+		</div>
+	</div>
+	<div class="row" >
+		<section class="container-fluid banner">
+			<div class="ban img-responsive">
+				<img src="{% static 'sfs.jpg' %}">
+			</div>
+			<div class="inner-banner">
+				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<h1 class="d-flex justify-content-center" style="color: blue;" >Travaillez de maniere optimale
+					</h1>
+				</div>
+			</div>
+		</section>
+		
+	</div>
+</div>
+{% endblock %}

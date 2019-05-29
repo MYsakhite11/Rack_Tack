@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% extends 'head1.html' %}
+
+{% block content %}
+<br><br><br><br><br>
+	<form method="POST" style="padding: 0;">
+    {% csrf_token %}
+        <div class="container">
+            <div class="row">
+                <div id="style_form1" class="col-sm-12 col-lg-6 col-xl-6 col-md-6">
+                    <div class="row ">
+                        <diV class="col-md-12 col-xl-12 col-lg-12 col-sm-12">
+                            <labe>Nom tache :</labe> <p >{{ form.name_task }} </p>
+                            <!-- {% for error in form.title.errors %}
+                                {{error}}
+                            {% endfor %} -->
+                        </diV>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-xl-12 col-lg-12 col-sm-12">
+                            <label>Description :</label> <p>{{ form.description }}</p>
+                            <!-- {% for error in form.content.errors %}
+                                {{error}}
+                            {% endfor %} -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-xl-12 col-lg-12 col-sm-12">
+                            <label>Debut de tache :</label> <p>{{ form.begin_time }}</p>
+                           <!--  {% for error in form.begin.errors %}
+                                {{error}}
+                            {% endfor %} -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-xl-12 col-lg-12 col-sm-12">
+                            <label>Fin de tache:</label> <p>{{form.end_time}}</p>
+                            <!-- {% for error in form.end.errors %}
+                                {{error}}
+                            {% endfor %} -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-xl-12 col-lg-12 col-sm-12">
+                            <!--<label>Rappeler :</label>{{form.reminder}}-->
+                            <button type="submit" class="btn btn-default" >Enregistrer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-2 col-xl-2 col-md-2"></div>
+                <div class="col-sm-12 col-lg-4 col-xl-4 col-md-4" id="img2">
+                    {% load static %}
+                    <br>
+                    <img src="{% static '8216mom.jpg' %}" class="img-responsive" id="style_img">
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </form>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'main_page.html' %}
+
+{% block content %}
+<br><br><br><br><br>
+
+<div class="col-sm-6 col-sm-6offset-3" style="margin: auto;">
+    <h1 class="bg-danger" align="center">{{ title }}</h1>
+    <hr>
+    <form method="POST" action="" enctype="multipart/form-data">
+    <div id="bg">
+    	{% csrf_token %}
+    	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+    		{{ form.username }}
+    	</div>
+    	<br>
+    	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+    		{{ form.password }}
+    	</div>
+    	<br>
+    	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+    		{{ form.email }}
+    	</div>
+    	<br>
+    	<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+    		{{ form.Confirmer_Adresse }}
+    	</div>
+    	
+    </div>
+    <br>
+    <input type="submit" class="btn btn-default" name="" value="{{ title }}">
+    
+    </form>
+</div>
+<br><br>
+
+{% endblock %}

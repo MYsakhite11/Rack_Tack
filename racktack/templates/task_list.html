@@ -1,0 +1,47 @@
+{% extends 'head.html' %}
+{% load static %}
+{% block content %}
+<br><br><br>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+			<img class="d-block w-100" src="{% static 'qi.jpg' %}" alt="First slide" height="500px">
+		</div>
+	</div>
+</div>
+<div id="style_table">
+	<h1 align="center"><b>LISTE DES TACHES :</b></h1>
+	<hr>
+	<div class="table-responsive">
+		<table class="col-md-12 col-sm-12 col-xl-12 col-lg-12" id="tabl">
+			<thead class="p-3 mb-2 bg-danger text-white">
+				<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+					<tr>
+					<th>Nom tache </th>
+					<th>Début</th>
+					<th>Fin</th>
+					<th></th>
+					<th></th>
+				</tr>
+				</div>
+			</thead>
+			<tbody>
+				<div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+					{% for obj in obj_list %}
+					<tr>
+					<td><a href="{% url 'racktack_app:detail' obj.id %}">{{ obj.name_task }}</a></td>
+					<td>{{ obj.begin_time }}</td>
+					<td>{{ obj.end_time }}</td>
+					<td><button><a href="{% url 'racktack_app:update' obj.id %}" style="color: white;">Modifier</a></button></td>
+					<td><button><a href="{% url 'racktack_app:delete' obj.id %}" style="color: white;">Supprimer</a></button></td>
+				</tr>
+				{% endfor %}
+				</div>
+			</tbody>
+		</table>
+	</div>
+	<hr>
+	<button><a href="{% url 'racktack_app:saver_task' %}" style="color: white;">Enregistrer une nouvelle tache:</a></button>
+</div>
+
+{% endblock %}

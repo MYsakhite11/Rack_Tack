@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% extends 'main_page.html' %}
+{% load static %}
+{% block content %}
+</div><br/><br/>
+<div class="container-fluide">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+			<div style="background-image: url({% static 'checklist130.jpg' %}); ">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<br><br><br><br><br><br>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h1 class="display-3" align="center" style="color: white;">Planificateur de tâche</h1>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<br>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h2 style="color: white;" align="center">Ici, toutes vos tâches seront organisées. Vous aurez le contrôle sur vos journées !!!</h2>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<br><br><br>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<form class="form-inline my-2 my-lg-0" action="/racktack_app/inscription">
+							<div style="margin: auto;">
+					      		<button class="btn btn-primary btn-lg btn-block" type="submit">Rejoignez nous
+					      	</button>
+							</div>
+				    	</form>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<br><br><br><br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div><br/><br/><br/>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 d-flex justify-content-center" id="Insc">
+			<h4><a class="btn btn-primary btn-lg btn-block" href="{% url 'racktack_app:inscription' %}">Incrivez-vous !!!</a></h4>
+		</div>
+		<br/><br/>
+		<div class="col-sm-12 col-md-2 col-lg-2 col-xl-2"><br><br></div>
+		<div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 d-flex justify-content-center" id="Conec">
+			<h4><a class="btn btn-primary btn-lg btn-block" href="{% url 'racktack_app:conection' %}">Connectez-vous !!!</a></h4>
+		</div>
+	</div>
+</div>
+<br><br>
+
+<!-- Start Features section -->
+<div id="features" class="offset">
+	<div class="container-fluid banner">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pub1">
+				<img src="{% static 'q2.jpg' %}"S id="imge">	
+			</div>
+			<br><br><br><br>
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pub">
+				<h4 style="margin: auto;">
+					<br><br><br><br>
+					Avec RackTack, vous serrez organisés! Nous vous<br>
+					aiderons à avoir le controle sur vos journées.<br>
+					travaillez de maniere optimale .<br>
+					
+				</h4>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End features section -->
+
+<!-- start Partenaires section -->
+<div id="Partenaires" class="offset">
+	
+</div>
+<!-- End Partenaires section -->
+
+
+<!-- start Clients section -->
+<br><br>
+<div id="Clients" class="offset">
+	<div class="container-fluid banner">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pub">
+				<h4 style="margin: auto;">
+					<br><br><br><br>
+					Nos clients travaillent de facon organisée.<br>
+					En effet, nous mettons à votre disposition<br>
+					toutes les conditions necessaires pour travailler.<br>
+					
+				</h4>
+			</div>
+			<br><br><br><br>
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pub1">
+				<img src="{% static 'qii.jpg' %}"S id="imgee">	
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Clients section -->
+<!-- start contact section -->
+<div id="Contact" class="offset">
+	
+</div>
+<!-- End contact section -->
+
+<br/><br/><br/>
+{% endblock %}

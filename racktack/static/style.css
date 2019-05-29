@@ -1,0 +1,108 @@
+#style_form1 {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.39), 0 10px 10px rgba(0,0,0,0.33);
+	background: linear-gradient(90deg, pink, gray, rgb(104, 204, 255));
+	border-radius: 10px 10px 10px 10px;
+	padding: 10px;
+}
+#img {
+	height: 600px;
+}
+
+/*#Insc, #Conec {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.39), 0 10px 10px rgba(0,0,0,0.23);
+	padding: 35px;
+	border-radius: 5px 5px 5px 5px;
+}*/
+#inscipt {
+	background-color: rgba(118, 176, 199, 0.6);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.59), 0 10px 10px rgba(0,0,0,0.43);
+	padding: 35px;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 300px;
+	align-items: center;
+}
+#tabl {
+	padding: 10px 10px 10px 10px;
+	height: auto;
+	margin: 15px 15px 10px 15px;
+}
+tr {
+	padding: 10px 10px 10px 10px;
+}
+.container-fluid {
+	padding: 0;
+}
+
+#img2 {
+	margin: auto;
+	border-image: 5px;
+}
+body {
+	background-color:  #fff;
+	overflow-x: hidden; 
+}
+.banner {
+	width: 100%;
+	max-width: 100%;
+}
+.ban {
+	width: 100%;
+	max-width: 100%;
+}
+.ban img {
+	width: 100%;
+	max-width: 100%;
+}
+.inner-banner {
+	position: absolute;
+	top: 500px;
+}
+.pub1 {
+	width: 100%;
+	max-width: 100%;
+}
+.pub1 img {
+	width: 100%;
+	max-width: 100%;
+}
+
+#style_table {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.59), 0 10px 10px rgba(0,0,0,0.43);
+	padding: 35px;
+	border-radius: 5px 5px 5px 5px;
+	margin: 10px 10px 10px 10px; 
+}
+@media (max-width: 767px) {
+    img {
+      display: table;
+      margin: 0 auto;
+    }
+}
+ /*#img1 > #img*/
+.pub1 > #imge, .pub, #bg, #img2 > #style_img, .pub1 > #imgee {
+	border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.39), 0 10px 10px rgba(0,0,0,0.23);
+    padding: 30px;
+}
+#bg {
+	background: linear-gradient(90deg, pink, gray, rgb(104, 204, 255));
+}
+button {
+	background-color: #563d7c; 
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px 5px 5px 5px;
+	color: white;
+}
+td {
+	padding: 30px 30px 30px 30px;
+}
+h1 {
+	text-align: center;
+	margin: auto;
+}
+nav a:hover {
+	background-color: blue;
+}
